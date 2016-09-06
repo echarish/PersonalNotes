@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noteLabelText"
+        android:id="@+id/noteLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/noteInput"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/noteLabel"
+        android:layout_toEndOf="@+id/noteLabel"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addNoteButtonText"
+        android:id="@+id/addNoteButton"
+        android:layout_below="@+id/noteInput"
+        android:layout_toRightOf="@+id/noteLabel"
+        android:layout_toEndOf="@+id/noteLabel"
+        android:onClick="addNoteClicked"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchNoteButtonText"
+        android:id="@+id/searchNoteButton"
+        android:onClick="searchNoteClicked"
+        android:layout_above="@+id/noteListView"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deleteNoteButton"
+        android:id="@+id/deleteNoteButton"
+        android:onClick="deleteNoteClicked"
+        android:layout_alignTop="@+id/searchNoteButton"
+        android:layout_alignRight="@+id/noteInput"
+        android:layout_alignEnd="@+id/noteInput"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noteListView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/addNoteButton"
+        android:layout_margin="10dp"/>
+</RelativeLayout>

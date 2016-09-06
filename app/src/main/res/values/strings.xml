@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PersonalNotes</string>
+    <string name="action_settings">Settings</string>
+    <string name="addNoteButtonText">Add</string>
+    <string name="searchNoteButtonText">Search</string>
+    <string name="deleteNoteButton">Delete</string>
+    <string name="noteLabelText">Note :</string>
+</resources>
